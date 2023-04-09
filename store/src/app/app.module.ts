@@ -5,14 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './shared/components/header/header.component';
+//import { StoreComponent } from './pages/store/store.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
 
+// EL APP.MODULE ES NUESTRO MODULO PRINCIPAL
 @NgModule({
   declarations: [
     //inyectamos componentes y directivas
     AppComponent,
     HeaderComponent,
+    //StoreComponent,
   ],
   imports: [
     //los modulos de angular que necesitemos, los formularios, propios modulos
@@ -21,6 +26,8 @@ import { MaterialModule } from './material.module';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HttpClientModule,
+    MatCardModule,
   ],
   providers: [], //aca inyectamos las dependencias, los servicios
   bootstrap: [AppComponent], //solo esta en el modulo principal
