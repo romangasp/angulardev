@@ -9,7 +9,6 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
-import { MatCardModule } from '@angular/material/card';
 
 // EL APP.MODULE ES NUESTRO MODULO PRINCIPAL
 @NgModule({
@@ -27,7 +26,6 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    MatCardModule,
   ],
   providers: [], //aca inyectamos las dependencias, los servicios
   bootstrap: [AppComponent], //solo esta en el modulo principal
