@@ -5,6 +5,7 @@ export interface Product {
   description: string;
   categoryId: number;
   stock: number;
+  qty: number;
 }
 
 //Una interface es como un contrato o una firma que hacemos cuando vamos a operar con products

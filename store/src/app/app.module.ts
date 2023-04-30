@@ -9,7 +9,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
-import { CartComponent } from './shared/components/header/cart.component';
+import { CartComponent } from './shared/components/cart/cart.component';
 
 // EL APP.MODULE ES NUESTRO MODULO PRINCIPAL
 @NgModule({

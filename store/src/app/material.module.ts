@@ -6,7 +6,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
-import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { MatSelectModule } from '@angular/material/select';
     MatFormFieldModule,
     MatRadioModule,
     MatInputModule,
-    MatOptionModule,
     MatSelectModule,
   ], //todos los modulos que nosotros exportemos estarn disponibles para toda la aplicacion
 })

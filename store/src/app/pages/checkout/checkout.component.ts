@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { tap } from 'rxjs/operators';
+import { DataService } from 'src/app/shared/components/services/data.service';
 
 @Component({
   selector: 'app-checkout',
@@ -28,11 +30,24 @@ export class CheckoutComponent implements OnInit {
       openingHours: '10:00 - 14:00 and 17:00 - 20:30',
     },
   ];
-  constructor() {}
+  constructor(private dataSvc: DataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getStores();
+  }
 
   onPickupOrDelivery(value: boolean): void {
     console.log(value);
+  }
+
+  onSubmit(): void {
+    console.log('save');
+  }
+
+  getStores(): void {
+    this.dataSvc
+      .getStores()
+      .pipe(tap((res) => console.log(res)))
+      .subscribe();
   }
 }
